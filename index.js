@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get("/", (req, res) => {
-    res.send("URL 계산기 서비스 <br> 덧셈 : /add , 뺄셈 : /minus, 곱셈 : /multi, 나눗셈 : /div");
+    res.send("URL 계산기 서비스 <br> 덧셈 : /add , 뺄셈 : /minus, 곱셈 : /multi, 나눗셈 : /div <br> 입력 방법 : /사칙연산?p1=(숫자)&p2=(숫자)");
 });
 
 app.get("/add", (req, res) => {
